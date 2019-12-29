@@ -27,6 +27,11 @@ const routes = [
     component: () => import('../views/Receiving')
   },
   {
+    path: '/brew',
+    name: 'brew',
+    component: () => import('../views/Brew')
+  },
+  {
     path: '/about',
     name: 'about',
     component: () => import('../views/About.vue')

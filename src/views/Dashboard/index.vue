@@ -11,7 +11,7 @@
                     </b-button>
                 </b-col>
                 <b-col cols="12" sm="6" md="4">
-                    <b-button block variant="outline-info" :to="'about'">Brew Batch</b-button>
+                    <b-button block variant="outline-info" :to="'brew'">Brew Batch</b-button>
                 </b-col>
                 <b-col cols="12" class="mt-3">
                     <h5>Next available fermenter: <strong>01/15/2020</strong> (7 days)</h5>

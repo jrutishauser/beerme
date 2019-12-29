@@ -18,7 +18,7 @@
                     <v-select :options="[1,2,3]" taggable />
                 </b-col>
                 <b-col cols="3">
-                    <strong>Quantity</strong>
+                    <strong>Unit</strong>
                     <v-select :options="['lb', '55lb bag(s)', 'kg']" taggable />
                 </b-col>
             </b-row>
@@ -41,7 +41,7 @@
                     <v-select :options="[1,2,3]" taggable />
                 </b-col>
                 <b-col cols="3">
-                    <strong>Quantity</strong>
+                    <strong>Unit</strong>
                     <v-select :options="['lb', '55lb bag(s)', 'kg']" taggable />
                 </b-col>
             </b-row>
@@ -64,7 +64,7 @@
                     <v-select :options="[1,2,3]" taggable />
                 </b-col>
                 <b-col cols="3">
-                    <strong>Quantity</strong>
+                    <strong>Unit</strong>
                     <v-select :options="['lb', '55lb bag(s)', 'kg']" taggable v-model="grainSelect" />
                 </b-col>
             </b-row>
@@ -72,6 +72,11 @@
                 <b-button pill variant="outline-success">+</b-button>
             </b-col>
         </b-col>
+        <b-navbar type="light" variant="light" fixed="bottom">
+            <b-col cols="12" offset-sm="9" sm="3">
+                <b-button variant="success" :to="'dashboard'">Submit Inventory ></b-button>
+            </b-col>
+        </b-navbar>
     </b-row>
 </template>
 
