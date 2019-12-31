@@ -19,7 +19,7 @@
             </b-row>
         </b-col>
         <b-col cols="12" class="mt-3">
-            <b-row>
+            <b-row  class="mb-3">
                 <b-col cols="12" sm="3">
                     <b-img thumbnail fluid src="https://via.placeholder.com/150" alt="Image 1" />
                 </b-col>
@@ -30,10 +30,19 @@
                     <b-progress :value="75" show-value />
                 </b-col>
                 <b-col>
-                    <b-link>Edit</b-link>
+                    <div>
+                        <b-link>View</b-link> |
+                        <b-link>Edit</b-link>
+                    </div>
+                    <div class="h-100 mt-3">
+                        <b-button variant="outline-light" v-b-popover.hover="'Add bananas'" >
+                            <i class="far fa-exclamation-circle fa-lg" style="color: darkorange;"/>
+                        </b-button>
+                        <p>Action required in <strong>3</strong> days.</p>
+                    </div>
                 </b-col>
             </b-row>
-            <b-row>
+            <b-row class="mb-3">
                 <b-col cols="12" sm="3">
                     <b-img thumbnail fluid src="https://via.placeholder.com/150" alt="Image 1" />
                 </b-col>
@@ -44,7 +53,10 @@
                     <b-progress :value="10" show-value />
                 </b-col>
                 <b-col>
-                    <b-link>Edit</b-link>
+                    <div>
+                        <b-link>View</b-link> |
+                        <b-link>Edit</b-link>
+                    </div>
                 </b-col>
             </b-row>
         </b-col>
